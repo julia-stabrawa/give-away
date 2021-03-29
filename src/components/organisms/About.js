@@ -1,9 +1,11 @@
 import React from "react";
+import UsText from "../molecules/UsText";
 
-function About() {
+function About(props) {
     return (
-        <div>
-
+        <div className="about__us" id={props.id}>
+            <UsText/>
+            <div className="photo"> </div>
         </div>
     );
 }

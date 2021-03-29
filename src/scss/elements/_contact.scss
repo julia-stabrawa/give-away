@@ -1,0 +1,78 @@
+.contact {
+  height: 100vh;
+  background: url("../../assets/Background-Contact-Form.jpg") no-repeat;
+  display: flex;
+  justify-content: flex-end;
+
+  .contact__cnt {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .contact__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 4rem;
+    }
+
+    .contact__form {
+      max-width: 440px;
+      display: flex;
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .form-row {
+          display: flex;
+          flex-direction: column;
+
+          .label__txt {
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 600;
+            color: $text-color;
+            margin-bottom: 40px;
+            padding-top: 0.5rem;
+          }
+          .form-input {
+            border: none;
+            border-bottom: 1px solid #000;
+          }
+          .form-checkbox {
+            font-size: 12px;
+            color: #707070;
+            text-align: left;
+            padding-top: 0.5rem;
+          }
+        }
+        .form-row-btn {
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 0.5rem;
+
+
+          .form-btn {
+            background: $light-background;
+            color: white;
+            font-weight: 600;
+            font-size: 13px;
+            border-radius: 35px;
+            width: 225px;
+            height: 56px;
+            border: none;
+            box-shadow: 5px 10px 14px #07ACE629;
+            transition: 1s;
+          }
+          &:hover {
+            box-shadow: 0 0 27px 2px $light-background;
+          }
+        }
+      }
+    }
+  }
+}

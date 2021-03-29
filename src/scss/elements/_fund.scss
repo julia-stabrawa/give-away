@@ -1,0 +1,75 @@
+.fund {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .fund__cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .fund__menu {
+      margin: 2rem;
+      display: flex;
+      justify-content: center;
+
+      li {
+        list-style: none;
+        border: 1px solid transparent;
+        padding: 0.6rem 1rem;
+        transition: 0.5s;
+        margin: 1rem;
+
+        &:hover {
+          border: 1px solid $text-inactive;
+        }
+      }
+    }
+  }
+}
+
+.fund__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .list__description {
+    width: 40%;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+
+  .list {
+    margin: 1rem;
+    width: 80rem;
+
+    ul {
+
+      li {
+        list-style: none;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $text-inactive;
+        font-family: $font-alt;
+        color: $text-inactive;
+
+        h2 {
+          font-weight: 300;
+          margin: 1rem 0 1rem 0;
+        }
+
+        p {
+          font-style: italic;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

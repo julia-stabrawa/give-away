@@ -4,9 +4,10 @@
   background-position: -30rem;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 1rem;
 
   .hero__cnt {
-    width: 60rem;
+    width: 70rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,21 +55,17 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      padding: 8rem;
+      padding: 4rem;
 
       .hero__action-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 4rem;
-
-        p {
-          font-size: 2rem;
-
-        }
       }
 
       .hero__action-btn {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         padding-top: 6rem;
