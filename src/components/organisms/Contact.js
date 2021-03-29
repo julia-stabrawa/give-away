@@ -13,16 +13,18 @@ function Contact(props) {
                 </div>
                 <div className="contact__form">
                     <form className="form">
-                        <div className="form-row">
-                            <label htmlFor="name" className="label__txt">Name</label>
-                            <input id="name" name="name" type="text" className="form-input"/>
+                        <div className="form__info">
+                            <div className="form-row">
+                                <label htmlFor="name" className="label__txt">Enter your name</label>
+                                <input id="name" name="name" type="text" className="form-input"/>
+                            </div>
+                            <div className="form-row">
+                                <label htmlFor="email" className="label__txt">Enter your e-mail</label>
+                                <input id="email" name="email" type="text" className="form-input"/>
+                            </div>
                         </div>
                         <div className="form-row">
-                            <label htmlFor="email" className="label__txt">E-mail</label>
-                            <input id="email" name="email" type="text" className="form-input"/>
-                        </div>
-                        <div className="form-row">
-                            <label htmlFor="message" className="label__txt">Message</label>
+                            <label htmlFor="message" className="label__txt">Write a message</label>
                             <input id="message" name="message" type="text" className="form-input"/>
                         </div>
                         <div className="form-row-btn">

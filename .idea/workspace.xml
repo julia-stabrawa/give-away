@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4969223-3993-4dc5-bf14-dc499d657886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/FundList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/Columns.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/Nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/Steps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecules/UsText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/Project.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/elements/_about.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/elements/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/elements/_fund.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/elements/_project.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/HomeHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/HomeThreeColumns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/DecorTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Foundation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Foundation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/LogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/LogIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/What.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_all.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/settings/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/settings/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_contact.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1616503382526</updated>
       <workItem from="1616503386413" duration="12468000" />
-      <workItem from="1616567211295" duration="62685000" />
+      <workItem from="1616567211295" duration="62732000" />
+      <workItem from="1617041098413" duration="1292000" />
     </task>
     <servers />
   </component>
