@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import HeaderNav from "../molecules/HeaderNav";
 import DecorTitle from "../atoms/DecorTitle";
 
-function Register() {
+function Log() {
     return (
         <div className="log">
             <div>
@@ -15,7 +15,7 @@ function Register() {
             <div className="log__action-cnt">
                 <div className="log__action-text">
                     <DecorTitle
-                        titleOne={"Register"}
+                        titleOne={"Log in"}
                     />
                 </div>
                 <div className="contact__form">
@@ -29,26 +29,22 @@ function Register() {
                                 <label htmlFor="password" className="label__txt">Password</label>
                                 <input id="password" name="password" type="password" className="form-input"/>
                             </div>
-                            <div className="form-row">
-                                <label htmlFor="password" className="label__txt">Repeat password</label>
-                                <input id="password" name="password" type="password" className="form-input"/>
-                            </div>
                         </div>
                         <div className="form-row-btn">
 
                             <Link
-                                to="/log"
+                                to="/register"
                                 className="form-btn"
                                 style={{
                                     textDecoration: "none",
                                     color: "#3C3C3C"
                                 }}
                             >
-                                Log in
+                                Register
                             </Link>
 
                             <button type="submit" className="form-btn">
-                                Register
+                                Log in
                             </button>
 
                         </div>
@@ -60,4 +56,4 @@ function Register() {
     );
 }
 
-export default Register;
+export default Log;

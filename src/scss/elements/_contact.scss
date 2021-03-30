@@ -21,7 +21,6 @@
 
     .contact__form {
       width: 100%;
-      margin-top: 3rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,12 +51,6 @@
             border: none;
             border-bottom: 1px solid #000;
             background: transparent;
-          }
-          .form-checkbox {
-            font-size: 12px;
-            color: #707070;
-            text-align: left;
-            padding-top: 0.5rem;
           }
         }
         .form-row-btn {

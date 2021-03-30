@@ -1,0 +1,135 @@
+.log {
+  height: 100vh;
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+
+    .log__cnt {
+      width: 70rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 3rem;
+
+        .registration {
+          display: flex;
+
+          li {
+            list-style: none;
+            border: 1px solid transparent;
+            padding: 0.6rem;
+            transition: 0.5s;
+            margin: 1rem;
+
+            &:hover {
+              border: 1px solid $border-yellow;
+            }
+          }
+        }
+
+        .menu {
+          display: flex;
+
+          li {
+            list-style: none;
+            border: 1px solid transparent;
+            padding: 0.6rem 1rem;
+            transition: 0.5s;
+            margin: 1rem;
+
+            &:hover {
+              border: 1px solid $text-inactive;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .log__action-cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .log__action-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact__form {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+
+        .form__info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: $light-background;
+          width: 80%;
+          padding: 1rem;
+
+          .form-row {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+
+            .label__txt {
+              font-size: 1rem;
+              font-weight: 400;
+              color: $text-color;
+              margin: 2rem 0 2rem 0;
+              padding-top: 0.5rem;
+            }
+
+            .form-input {
+              border: none;
+              border-bottom: 1px solid #000;
+              background: transparent;
+            }
+          }
+        }
+
+        .form-row-btn {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          .form-btn {
+            border: 1px solid $text-color;
+            background: transparent;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            width: 10rem;
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 200;
+
+            &:hover {
+              border: 1px solid $border-yellow;
+              color: $border-yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
