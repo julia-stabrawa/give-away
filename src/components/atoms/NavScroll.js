@@ -1,29 +1,14 @@
 import {Link} from "react-scroll";
 import React from "react";
 
-function Nav() {
-
-    const menuStyle = {
-        color: "#3C3C3C",
-        cursor: "pointer"
-    }
+function NavScroll(props) {
 
     return (
-        <ul className="menu">
-            <li>
-                <Link
-                    to="/"
-                    style={menuStyle}
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                >Start</Link>
-            </li>
+        <>
             <li>
                 <Link
                     to="what"
-                    style={menuStyle}
+                    style={props.style}
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -33,7 +18,7 @@ function Nav() {
             <li>
                 <Link
                     to="about"
-                    style={menuStyle}
+                    style={props.style}
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -43,7 +28,7 @@ function Nav() {
             <li>
                 <Link
                     to="fund"
-                    style={menuStyle}
+                    style={props.style}
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -53,15 +38,15 @@ function Nav() {
             <li>
                 <Link
                     to="contact"
-                    style={menuStyle}
+                    style={props.style}
                     activeClass="active"
                     spy={true}
                     smooth={true}
                     duration={500}
                 >Contact</Link>
             </li>
-        </ul>
+        </>
     );
 }
 
-export default Nav;
+export default NavScroll;

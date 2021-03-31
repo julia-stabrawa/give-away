@@ -6,3 +6,23 @@
 body {
   font-family: $font-base;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $light-background;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $border-yellow;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $text-inactive;
+}

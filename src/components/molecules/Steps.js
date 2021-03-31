@@ -1,6 +1,6 @@
 import React from "react";
 import DecorTitle from "../atoms/DecorTitle";
-import Button from "../atoms/Button";
+import Button from "../atoms/Btn";
 import Shirt from "../../assets/Icon-1.svg";
 import Bag from "../../assets/Icon-2.svg";
 import Glass from "../../assets/Icon-3.svg";

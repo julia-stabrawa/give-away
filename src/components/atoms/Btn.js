@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
-function Button(props) {
+function Btn(props) {
 
     const[hover, setHover] = useState(false);
 
@@ -18,7 +18,8 @@ function Button(props) {
         fontWeight: "200",
         textDecoration: "none",
         color: "#737373",
-        textAlign: "center"
+        textAlign: "center",
+        display: "flex"
     }
 
     const btnHover = {
@@ -34,7 +35,8 @@ function Button(props) {
         fontWeight: "200",
         textAlign: "center",
         textDecoration: "none",
-        color: "#FAD648"
+        color: "#FAD648",
+        display: "flex"
     }
 
     return (
@@ -53,4 +55,4 @@ function Button(props) {
     );
 }
 
-export default Button;
+export default Btn;

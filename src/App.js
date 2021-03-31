@@ -13,8 +13,6 @@ function App() {
 
         <Router>
 
-
-
             <Switch>
 
                 <Route path="/register">
@@ -30,6 +28,7 @@ function App() {
                 </Route>
 
             </Switch>
+
         </Router>
 
     );

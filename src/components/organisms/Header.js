@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../atoms/Button";
+import Button from "../atoms/Btn";
 import DecorTitle from "../atoms/DecorTitle";
 import HeaderNav from "../molecules/HeaderNav";
 
