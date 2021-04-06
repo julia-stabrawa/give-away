@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4969223-3993-4dc5-bf14-dc499d657886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/Nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atoms/NavScroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organisms/LogOut.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atoms/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Btn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/HeaderNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/HeaderNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecules/Nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Btn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Btn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecules/Steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Steps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_project.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/generic/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/generic/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Log.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Register.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projekty/Final Project/moodformovies" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -75,6 +70,8 @@
       <workItem from="1617041098413" duration="1384000" />
       <workItem from="1617100020385" duration="11995000" />
       <workItem from="1617124862373" duration="21247000" />
+      <workItem from="1617206145138" duration="33000" />
+      <workItem from="1617709617560" duration="8194000" />
     </task>
     <servers />
   </component>

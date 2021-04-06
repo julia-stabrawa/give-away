@@ -64,7 +64,7 @@ function Steps() {
                     <p>the courier will whenever you want</p>
                 </div>
             </div>
-            <Button text={"Give stuff away"}/>
+            <Button text={"Give stuff away"} direction={"/log"}/>
         </div>
     );
 }

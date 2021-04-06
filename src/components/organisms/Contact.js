@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import DecorTitle from "../atoms/DecorTitle";
 import Instagram from "../../assets/Instagram.svg";
 import Facebook from "../../assets/Facebook.svg";
@@ -187,7 +187,7 @@ function Contact(props) {
                     </div>
                 </div>
                 <div className="footer">
-                    <div></div>
+                    <div> </div>
                     <p>Copyright CodersLab</p>
                     <div className="socials">
                         <img

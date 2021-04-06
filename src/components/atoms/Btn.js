@@ -46,7 +46,7 @@ function Btn(props) {
             onMouseLeave={() => setHover(false)}
         >
             <Link
-                to="/log"
+                to={props.direction}
                 style={!hover ? txtStyle : txtHover}
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}

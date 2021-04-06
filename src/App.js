@@ -7,6 +7,7 @@ import {
 import Home from "./components/pages/Home";
 import Log from "./components/pages/Log";
 import Register from "./components/pages/Register";
+import LogOut from "./components/organisms/LogOut";
 
 function App() {
     return (
@@ -14,6 +15,9 @@ function App() {
         <Router>
 
             <Switch>
+                <Route path="/logout">
+                    <LogOut/>
+                </Route>
 
                 <Route path="/register">
                     <Register/>
