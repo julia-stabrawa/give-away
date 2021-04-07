@@ -1,24 +1,25 @@
 import React from "react";
+import SingleColumn from "../atoms/SingleColumn";
 
 function Columns() {
     return (
         <div className="columns">
             <div className="columns__cnt">
-                <div className="single__column">
-                    <h2>10</h2>
-                    <h3>Full bags handed out</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor labore molestias quis saepe unde! Numquam?</p>
-                </div>
-                <div className="single__column">
-                    <h2>5</h2>
-                    <h3>Supported organisations</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor labore molestias quis saepe unde! Numquam?</p>
-                </div>
-                <div className="single__column">
-                    <h2>7</h2>
-                    <h3>Organised collections</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor labore molestias quis saepe unde! Numquam?</p>
-                </div>
+                <SingleColumn
+                    number={"10"}
+                    title={"Full bags handed out"}
+                    description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor labore molestias quis saepe unde! Numquam?"}
+                />
+                <SingleColumn
+                    number={"5"}
+                    title={"Supported organisations"}
+                    description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor labore molestias quis saepe unde! Numquam?"}
+                />
+                <SingleColumn
+                    number={"7"}
+                    title={"Organised collections"}
+                    description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor labore molestias quis saepe unde! Numquam?"}
+                />
             </div>
         </div>
     );

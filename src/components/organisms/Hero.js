@@ -1,17 +1,13 @@
 import React from "react";
-import Button from "../atoms/Btn";
+import Btn from "../atoms/Btn";
 import DecorTitle from "../atoms/DecorTitle";
-import HeaderNav from "../molecules/HeaderNav";
+import Header from "../molecules/Header";
 
-function Header() {
-
+function Hero() {
     return (
         <div className="hero">
-
             <div className="hero__cnt">
-
-                <HeaderNav />
-
+                <Header/>
                 <div className="hero__action-cnt">
                     <div className="hero__action-text">
                         <DecorTitle
@@ -19,8 +15,16 @@ function Header() {
                             titleTwo={"Give away your stuff in the trusted hands"}/>
                     </div>
                     <div className="hero__action-btn">
-                        <Button direction={"/log"} text={"Give stuff away"}/>
-                        <Button direction={"/log"} text={"Organise collection"}/>
+                        <Btn
+                            direction={"/log"}
+                            text={"Give stuff away"}
+                            size={"btn"}
+                        />
+                        <Btn
+                            direction={"/log"}
+                            text={"Organise collection"}
+                            size={"btn"}
+                        />
                     </div>
                 </div>
             </div>
@@ -28,4 +32,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Hero;

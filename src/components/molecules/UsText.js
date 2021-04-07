@@ -1,6 +1,7 @@
 import React from "react";
 import DecorTitle from "../atoms/DecorTitle";
 import Signature from "../../assets/Signature.svg";
+import Icon from "../atoms/Icon";
 
 function UsText() {
     return (
@@ -12,14 +13,11 @@ function UsText() {
                     Adipisci asperiores magni temporibus!</p>
             </div>
             <div className="signature">
-                <img
-                    src={Signature}
-                    alt="team"
-                    style={{
-                        width: "15rem",
-                        height: "100%",
-                        marginTop: "2rem"
-                    }}
+                <Icon
+                    source={Signature}
+                    alt={"team"}
+                    width={"15rem"}
+                    height={"100%"}
                 />
             </div>
         </div>

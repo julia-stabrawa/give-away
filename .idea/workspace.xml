@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4969223-3993-4dc5-bf14-dc499d657886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/organisms/LogOut.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/BtnAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/Icon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/SingleColumn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/SingleStep.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atoms/ValidationResult.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecules/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/elements/_buttonComponent.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/elements/_decorativeText.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/atoms/Btn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Btn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/DecorTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/DecorTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atoms/NavScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atoms/NavScroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/Columns.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Columns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/HeaderNav.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecules/Steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/Steps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecules/UsText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecules/UsText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organisms/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organisms/LogOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organisms/LogOut.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Log.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Log.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/_all.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_all.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/elements/_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/elements/_project.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +89,8 @@
       <workItem from="1617100020385" duration="11995000" />
       <workItem from="1617124862373" duration="21247000" />
       <workItem from="1617206145138" duration="33000" />
-      <workItem from="1617709617560" duration="8194000" />
+      <workItem from="1617709617560" duration="8853000" />
+      <workItem from="1617779666470" duration="21493000" />
     </task>
     <servers />
   </component>
@@ -89,5 +108,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/pages/Log.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

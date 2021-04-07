@@ -2,9 +2,10 @@ import React, {useState} from "react";
 import DecorTitle from "../atoms/DecorTitle";
 import Instagram from "../../assets/Instagram.svg";
 import Facebook from "../../assets/Facebook.svg";
+import Icon from "../atoms/Icon";
+import ValidationResult from "../atoms/ValidationResult";
 
 function Contact(props) {
-
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -13,9 +14,7 @@ function Contact(props) {
     const [errorMsg, setErrorMsg] = useState("none");
     const [success, setSuccess] = useState("none");
 
-
     const nameCheck = (el) => {
-
         if (el.includes(" ")) {
             setErrorName("block");
         } else {
@@ -23,11 +22,8 @@ function Contact(props) {
             setErrorName("none");
         }
     }
-
     const mailCheck = (el) => {
-
         const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
         if (re.test(el)) {
             setEmail(el);
             setErrorEmail("none");
@@ -35,9 +31,7 @@ function Contact(props) {
             setErrorEmail("block");
         }
     }
-
     const msgCheck = (el) => {
-
         if (el.length < 120) {
             setErrorMsg("block");
         } else {
@@ -45,11 +39,8 @@ function Contact(props) {
             setErrorMsg("none");
         }
     }
-
     const handleSubmit = (e) => {
-
         e.preventDefault()
-
         const requestOptions = {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -57,11 +48,8 @@ function Contact(props) {
                 name: name,
                 email: email,
                 message: message,
-
             })
-
         }
-
         fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', requestOptions)
             .then(
                 (response) => (response.json())
@@ -74,35 +62,23 @@ function Contact(props) {
         })
     }
 
-
     return (
         <div className="contact" id={props.id}>
-
             <div className="contact__cover">
-
                 <div className="contact__info">
-
                     <div className="contact__cnt">
                         <div className="contact__title">
-                            <DecorTitle
-                                titleOne={"Contact us"}
-                            />
+                            <DecorTitle titleOne={"Contact us"}/>
                         </div>
-                        <p
-                            style={{
-                                display: `${success}`,
-                                color: "green",
-                                fontWeight: "600",
-                                paddingTop: "1rem",
-                                textAlign: "center"
-                            }}>
-                            Message has been sent successfully! <br/>
-                        Well get in touch with you soon.
-                        </p>
+                        <ValidationResult
+                            display={success}
+                            color={"green"}
+                            text={"Message has been sent successfully! Well get in touch with you soon."}
+                        />
                         <div className="contact__form">
                             <form className="form">
                                 <div className="form__info">
-                                    <div className="form-row">
+                                    <div className="form__row">
                                         <label
                                             htmlFor="name"
                                             className="label__txt"
@@ -113,19 +89,16 @@ function Contact(props) {
                                             id="name"
                                             name="name"
                                             type="text"
-                                            className="form-input"
+                                            className="form__input"
                                             onChange={(e) => nameCheck(e.target.value)}
                                         />
-                                        <p
-                                            style={{
-                                                display: `${errorName}`,
-                                                color: "red",
-                                                fontWeight: "600",
-                                                fontSize: "0.9rem",
-                                                paddingTop: "0.5rem"
-                                            }}>Name is incorrect!</p>
+                                        <ValidationResult
+                                            display={errorName}
+                                            color={"red"}
+                                            text={"Name is incorrect!"}
+                                        />
                                     </div>
-                                    <div className="form-row">
+                                    <div className="form__row">
                                         <label
                                             htmlFor="email"
                                             className="label__txt"
@@ -136,20 +109,17 @@ function Contact(props) {
                                             id="email"
                                             name="email"
                                             type="text"
-                                            className="form-input"
+                                            className="form__input"
                                             onChange={(e) => mailCheck(e.target.value)}
                                         />
-                                        <p
-                                            style={{
-                                                display: `${errorEmail}`,
-                                                color: "red",
-                                                fontWeight: "600",
-                                                fontSize: "0.9rem",
-                                                paddingTop: "0.5rem"
-                                            }}>Email is incorrect!</p>
+                                        <ValidationResult
+                                            display={errorEmail}
+                                            color={"red"}
+                                            text={"Email is incorrect!"}
+                                        />
                                     </div>
                                 </div>
-                                <div className="form-row">
+                                <div className="form__row">
                                     <label
                                         htmlFor="message"
                                         className="label__txt"
@@ -160,25 +130,22 @@ function Contact(props) {
                                         id="message"
                                         name="message"
                                         minLength="120"
-                                        className="form-input"
+                                        className="form__input"
                                         style={{
                                             height: "5rem"
                                         }}
                                         onChange={(e) => msgCheck(e.target.value)}
                                     />
-                                    <p
-                                        style={{
-                                            display: `${errorMsg}`,
-                                            color: "red",
-                                            fontWeight: "600",
-                                            fontSize: "0.9rem",
-                                            paddingTop: "0.5rem"
-                                        }}>Message has to have at least 120 signs!</p>
+                                    <ValidationResult
+                                        display={errorMsg}
+                                        color={"red"}
+                                        text={"Message has to have at least 120 signs!"}
+                                    />
                                 </div>
-                                <div className="form-row-btn">
+                                <div className="form__row-btn">
                                     <button
                                         type="submit"
-                                        className="form-btn"
+                                        className="form__btn"
                                         onClick={handleSubmit}
                                     >Send</button>
                                 </div>
@@ -190,23 +157,19 @@ function Contact(props) {
                     <div> </div>
                     <p>Copyright CodersLab</p>
                     <div className="socials">
-                        <img
-                            src={Instagram}
-                            alt="decoration"
-                            style={{
-                                width: "1.5rem",
-                                height: "100%",
-                                margin: "0 1rem 0 1rem"
-                            }}
+                        <Icon
+                            source={Instagram}
+                            alt={"instagram"}
+                            width={"1.5rem"}
+                            height={"100%"}
+                            margin={"0 1rem 0 1rem"}
                         />
-                        <img
-                            src={Facebook}
-                            alt="decoration"
-                            style={{
-                                width: "1.5rem",
-                                height: "100%",
-                                margin: "0 1rem 0 1rem"
-                            }}
+                        <Icon
+                            source={Facebook}
+                            alt={"facebook"}
+                            width={"1.5rem"}
+                            height={"100%"}
+                            margin={"0 1rem 0 1rem"}
                         />
                     </div>
                 </div>

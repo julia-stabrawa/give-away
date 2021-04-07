@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import HeaderNav from "../molecules/HeaderNav";
+import HeaderNav from "../molecules/Header";
 import DecorTitle from "../atoms/DecorTitle";
+import Btn from "../atoms/Btn";
+import BtnAction from "../atoms/BtnAction";
+import ValidationResult from "../atoms/ValidationResult";
 
 function Register() {
 
@@ -12,8 +15,6 @@ function Register() {
     const [errorPasswordTwo, setErrorPasswordTwo] = useState("none");
     const [errorEmail, setErrorEmail] = useState("none");
     const [success, setSuccess] = useState("none");
-
-
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -30,22 +31,17 @@ function Register() {
             setErrorPasswordTwo("block");
     }
     const passwordCheck = (el) => {
-
         if (el.length > 6) {
             setPassword(el);
         }
     }
     const passwordTwoCheck = (el) => {
-
         if (el.length > 6 && el === password) {
             setPasswordTwo(el);
         }
     }
-
     const emailCheck = (el) => {
-
         const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
         if (re.test(el)) {
             setEmail(el);
         }
@@ -56,23 +52,17 @@ function Register() {
             <div>
                 <div className="log__cnt">
                     <HeaderNav/>
-
                 </div>
             </div>
             <div className="log__action-cnt">
                 <div className="log__action-text">
-                    <DecorTitle
-                        titleOne={"Register"}
-                    />
+                    <DecorTitle titleOne={"Register"}/>
                 </div>
-                <p
-                    style={{
-                        display: `${success}`,
-                        color: "green",
-                        fontWeight: "600",
-                        fontSize: "1rem",
-                        padding: "1rem"
-                    }}>Successfully registered!</p>
+                <ValidationResult
+                    display={success}
+                    color={"green"}
+                    text={"Successfully registered!"}
+                />
                 <div className="contact__form">
                     <form className="form">
                         <div className="form__info">
@@ -85,14 +75,11 @@ function Register() {
                                     className="form-input"
                                     onChange={(e) => emailCheck(e.target.value)}
                                 />
-                                <p
-                                    style={{
-                                        display: `${errorEmail}`,
-                                        color: "red",
-                                        fontWeight: "600",
-                                        fontSize: "0.9rem",
-                                        paddingTop: "0.5rem"
-                                    }}>Email is incorrect!</p>
+                                <ValidationResult
+                                    display={errorEmail}
+                                    color={"red"}
+                                    text={"Email is incorrect!"}
+                                />
                             </div>
                             <div className="form-row">
                                 <label htmlFor="password" className="label__txt">Password</label>
@@ -103,14 +90,11 @@ function Register() {
                                     className="form-input"
                                     onChange={(e) => passwordCheck(e.target.value)}
                                 />
-                                <p
-                                    style={{
-                                        display: `${errorPassword}`,
-                                        color: "red",
-                                        fontWeight: "600",
-                                        fontSize: "0.9rem",
-                                        paddingTop: "0.5rem"
-                                    }}>Password is too short!</p>
+                                <ValidationResult
+                                    display={errorPassword}
+                                    color={"red"}
+                                    text={"Password is too short!"}
+                                />
                             </div>
                             <div className="form-row">
                                 <label htmlFor="password" className="label__txt">Repeat password</label>
@@ -121,42 +105,27 @@ function Register() {
                                     className="form-input"
                                     onChange={(e) => passwordTwoCheck(e.target.value)}
                                 />
-                                <p
-                                    style={{
-                                        display: `${errorPasswordTwo}`,
-                                        color: "red",
-                                        fontWeight: "600",
-                                        fontSize: "0.9rem",
-                                        paddingTop: "0.5rem"
-                                    }}>Passwords are not the same!</p>
+                                <ValidationResult
+                                    display={errorPasswordTwo}
+                                    color={"red"}
+                                    text={"Passwords are not the same!"}
+                                />
                             </div>
                         </div>
                         <div className="form-row-btn">
-
-                            <Link
-                                to="/log"
-                                className="form-btn"
-                                style={{
-                                    textDecoration: "none",
-                                    color: "#3C3C3C"
-                                }}
-                            >
-                                Log in
-                            </Link>
-
-                            <button
-                                type="submit"
-                                className="form-btn"
-                                onClick={handleSubmit}
-                            >
-                                Register
-                            </button>
-
+                            <Btn
+                                direction={"/log"}
+                                size={"form__btn"}
+                                text={"Log in"}
+                            />
+                            <BtnAction
+                                clickAction={handleSubmit}
+                                text={"Register"}
+                            />
                         </div>
                     </form>
                 </div>
             </div>
-
         </div>
     );
 }

@@ -59,36 +59,17 @@
                 padding-top: 0.5rem;
               }
 
-              .form-input {
+              .form__input {
                 border: none;
                 border-bottom: 1px solid #000;
                 background: transparent;
               }
             }
 
-            .form-row-btn {
+            .form__row-btn {
               display: flex;
               flex-direction: row-reverse;
               padding-top: 0.5rem;
-
-
-              .form-btn {
-                border: 1px solid $text-color;
-                background: transparent;
-                padding: 1rem 2rem;
-                margin-top: 2rem;
-                width: 10rem;
-                cursor: pointer;
-                text-align: center;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                font-weight: 200;
-
-                &:hover {
-                  border: 1px solid $border-yellow;
-                  color: $border-yellow;
-                }
-              }
             }
           }
         }

@@ -1,14 +1,12 @@
 import {Link} from "react-scroll";
 import React from "react";
 
-function NavScroll(props) {
-
+function NavScroll() {
     return (
         <>
             <li>
                 <Link
                     to="what"
-                    style={props.style}
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -18,7 +16,6 @@ function NavScroll(props) {
             <li>
                 <Link
                     to="about"
-                    style={props.style}
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -28,7 +25,6 @@ function NavScroll(props) {
             <li>
                 <Link
                     to="fund"
-                    style={props.style}
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -38,7 +34,6 @@ function NavScroll(props) {
             <li>
                 <Link
                     to="contact"
-                    style={props.style}
                     activeClass="active"
                     spy={true}
                     smooth={true}

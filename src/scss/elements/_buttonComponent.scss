@@ -1,0 +1,47 @@
+.btn {
+  border: 1px solid $text-inactive;
+  padding: 1rem 3rem;
+  width: 16rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 200;
+  text-decoration: none;
+  color: $text-inactive;
+  text-align: center;
+  display: flex;
+
+  &:hover {
+    border: 1px solid $border-yellow;
+    color: $border-yellow;
+  }
+}
+
+.btn__small {
+  @extend .btn;
+  padding: 1rem 2rem;
+  width: 10rem;
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form__btn {
+  border: 1px solid $text-color;
+  background: transparent;
+  padding: 1rem 2.5rem;
+  margin-top: 3rem;
+  width: 10rem;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover {
+    border: 1px solid $border-yellow;
+    color: $border-yellow;
+  }
+}

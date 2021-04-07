@@ -1,25 +1,18 @@
 import React from "react";
 import Decoration from "../../assets/Decoration.svg"
+import Icon from "./Icon";
 
 function DecorTitle(props) {
-
-    const textStyle = {
-        fontSize: "2rem",
-        fontWeight: "400",
-    }
-
     return (
         <>
-            <h2 style={textStyle}>{props.titleOne}</h2>
-            <h2 style={textStyle}>{props.titleTwo}</h2>
-            <img
-                src={Decoration}
-                alt="decoration"
-                style={{
-                    width: "15rem",
-                    height: "100%",
-                    marginTop: "2rem"
-                }}
+            <h2 className="decor__text">{props.titleOne}</h2>
+            <h2 className="decor__text">{props.titleTwo}</h2>
+            <Icon
+                source={Decoration}
+                alt={"decoration"}
+                width={"15rem"}
+                height={"100%"}
+                margin={"1rem"}
             />
         </>
     );
